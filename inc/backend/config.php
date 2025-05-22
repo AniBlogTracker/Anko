@@ -33,7 +33,16 @@ $one->main_nav                   = array(
     array(
         'name'  => 'Home',
         'icon'  => 'si si-home',
-        'url'   => 'index.php'
+        'sub'   => array(
+                         array(
+                             'name'  => 'Blogs',
+                             'url'   => 'index.php'
+                         ),
+                         array(
+                             'name'  => 'News',
+                             'url'   => 'news.php'
+                         )
+                )
     ),
     array(
         'name'  => 'Sites',

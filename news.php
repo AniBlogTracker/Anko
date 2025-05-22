@@ -9,7 +9,7 @@ require 'inc/_global/config.php'; ?>
 <div class="bg-primary-dark">
   <div class="content content-full text-center pt-7 pb-6">
     <h1 class="h2 text-white mb-2">
-      Latest Anime Blog Posts
+      Latest Japanese Media News
     </h1>
     <h2 class="h4 fw-normal text-white-75 mb-0">
     </h2>
@@ -26,7 +26,7 @@ if (isset($_GET['p'])) {
 	$offset = $_GET['p'];
 }
 // Retrieve recent posts
-$jsonData = file_get_contents($one->apiurl . "/feeds/?p=" . $offset . "&extypeid=5" );
+$jsonData = file_get_contents($one->apiurl . "/feeds/?p=" . $offset . "&extypeid=1,2,3,4" );
 // Decode the JSON data into a PHP associative array
 $data = json_decode($jsonData, true);
 // Check if decoding was successful

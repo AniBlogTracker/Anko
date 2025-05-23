@@ -54,7 +54,7 @@ if ($data !== null && isset($_GET['sid'])) {?>
     <ul class="pagination justify-content-center push">
       <?php if (!is_null($data["page"]["prev"])) {?>
       <li class="page-item">
-        <a class="page-link" href="?p=<?php echo($data["page"]["prev"]) . "&?sid=" . $site_id; ?>" aria-label="Prev">
+        <a class="page-link" href="?p=<?php echo($data["page"]["prev"]) . "&sid=" . $site_id; ?>" aria-label="Prev">
           <span aria-hidden="true">
             <i class="fa fa-angle-left"></i>
           </span>
@@ -63,7 +63,7 @@ if ($data !== null && isset($_GET['sid'])) {?>
       <?php }
       if ($data["page"]["next"]) {?>
       <li class="page-item">
-        <a class="page-link" href="?p=<?php echo($data["page"]["next"]) . "&?sid=" . $site_id; ?>" aria-label="Next">
+        <a class="page-link" href="?p=<?php echo($data["page"]["next"]) . "&sid=" . $site_id; ?>" aria-label="Next">
           <span aria-hidden="true">
             <i class="fa fa-angle-right"></i>
           </span>

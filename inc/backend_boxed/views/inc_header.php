@@ -118,7 +118,7 @@
       <!-- END Open Search Section -->
 
       <!-- Search Form (visible on larger screens) -->
-      <form class="d-none d-md-inline-block" action="bd_search.php" method="POST">
+      <form class="d-none d-md-inline-block" action="search.php" method="POST">
         <div class="input-group input-group-sm">
           <input type="text" class="form-control form-control-alt" placeholder="Search.." id="page-header-search-input2" name="page-header-search-input2" />
           <span class="input-group-text bg-body border-0">
@@ -174,7 +174,7 @@
   <!-- Header Search -->
   <div id="page-header-search" class="overlay-header bg-body-extra-light">
     <div class="content-header">
-      <form class="w-100" action="bd_search.php" method="POST">
+      <form class="w-100" action="search.php" method="POST">
         <div class="input-group">
           <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
           <button type="button" class="btn btn-alt-danger" data-toggle="layout" data-action="header_search_off">

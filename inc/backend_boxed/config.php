@@ -95,7 +95,7 @@ $one->main_nav                   = array(
     array(
         'name'  => 'Search',
         'icon'  => 'si si-magnifier',
-        'url'   => 'bd_search.php'
+        'url'   => 'search.php'
     ),
     array(
         'name'  => 'Go Back',

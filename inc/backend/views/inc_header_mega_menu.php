@@ -437,7 +437,7 @@
   <!-- Header Search -->
   <div id="page-header-search" class="overlay-header bg-body-extra-light">
     <div class="content-header">
-      <form class="w-100" action="be_pages_generic_search.php" method="POST">
+      <form class="w-100" action="search.php" method="POST">
         <div class="input-group">
           <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
           <button type="button" class="btn btn-alt-danger" data-toggle="layout" data-action="header_search_off">

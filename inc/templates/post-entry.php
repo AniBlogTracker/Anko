@@ -15,6 +15,15 @@
 		      <hr />
 	                <p class="fs-sm text-muted">
                  <a href="./site.php?sid=<?php echo($x["site_id"]); ?>"><img src="<?php echo($one->apiurl . "/static/imgcache/" . $x["site_id"] . ".ico" )?>" alt=""><?php echo($x["websitename"]); ?></a>
+                <hr />
+                <?php
+                    $len=count($x["related_anime"]);
+                    foreach ($x["related_anime"] as $y){ ?>
+                    <a href="./anime.php?aid=<?php echo($y["anime_id"]); ?>"><?php echo($y["title"]); ?></a>
+                    <?php if( $len > 1) echo ',';
+                    $len--;?>
+                <?php }?>
+
                 </p>
 	      </p>
         </div>

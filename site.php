@@ -28,7 +28,7 @@ $data = json_decode($jsonData, true);
 if ($data !== null && isset($_GET['sid'])) {?>
   <div class="content content-full text-center pt-7 pb-6">
     <h1 class="h2 text-white mb-2">
-      Posts from from <?php echo($data["data"][0]["websitename"]); ?>
+      Posts from <?php echo($data["data"][0]["websitename"]); ?>
     </h1>
     <h2 class="h4 fw-normal text-white-75 mb-0">
     </h2>

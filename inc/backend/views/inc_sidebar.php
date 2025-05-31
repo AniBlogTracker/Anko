@@ -86,6 +86,10 @@
             <span>Modern</span>
             <i class="fa fa-circle text-modern"></i>
           </button>
+            <button class="dropdown-item d-flex align-items-center justify-content-between fw-medium" data-toggle="theme" data-theme="<?php echo $one->assets_folder; ?>/css/themes/sakura.css">
+              <span>Sakura</span>
+              <i class="fa fa-circle text-sakura"></i>
+            </button>
           <button class="dropdown-item d-flex align-items-center justify-content-between fw-medium" data-toggle="theme" data-theme="<?php echo $one->assets_folder; ?>/css/themes/smooth.min.css">
             <span>Smooth</span>
             <i class="fa fa-circle text-smooth"></i>

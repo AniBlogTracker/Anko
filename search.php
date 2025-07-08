@@ -57,7 +57,7 @@ if ($data !== null) {
     <ul class="pagination justify-content-center push">
       <?php if (!is_null($data["page"]["prev"])) {?>
       <li class="page-item">
-        <a class="page-link" href="?p=<?php echo($data["page"]["prev"]) . "&?q=" . urlencode($search); ?>" aria-label="Prev">
+        <a class="page-link" href="?p=<?php echo($data["page"]["prev"]) . "&q=" . urlencode($search); ?>" aria-label="Prev">
           <span aria-hidden="true">
             <i class="fa fa-angle-left"></i>
           </span>
@@ -66,7 +66,7 @@ if ($data !== null) {
       <?php }
       if ($data["page"]["next"]) {?>
       <li class="page-item">
-        <a class="page-link" href="?p=<?php echo($data["page"]["next"]) . "&?q=" . urlencode($search); ?>" aria-label="Next">
+        <a class="page-link" href="?p=<?php echo($data["page"]["next"]) . "&q=" . urlencode($search); ?>" aria-label="Next">
           <span aria-hidden="true">
             <i class="fa fa-angle-right"></i>
           </span>
